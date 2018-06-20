@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Learning JavaScript Design Patterns</title>
+
+    <style>
+        h3 {
+            margin-top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Learning JavaScript Design Patterns.</h1>
+
+    <h2>
+            What is a Pattern?
+    </h2>
+    <div>A pattern is a reusable solution that can be applied to commonly occurring problems in software design.</div>
+    <div>In really simple words: template for how I could solve problem.</div>
+
+
+
+    <h3>Car class and creating object through new keyword</h3>
+    <h4>Check car.js and carHandler.js</h4>
+    <div id="carobject"></div>
+
+
+    <h3>Object Creation</h3>
+    <h4>Check objCreation.js</h4>
+    <div id="obj-creation"></div>
+    <div id="obj-creation-2-driver"></div>
+
+
+
+
+    <h3>Constructor</h3>
+    <h4>check constructor.js and constructorWithPrototypes.js</h4>
+    <div id="constructor"></div>
+    <div id="constructor-with-prototype"></div>
+
+
+    <h3>Modules</h3>
+    <h4>check modules.js</h4>
+    <div id="modules"></div>
+    <div id="modules-2"></div>
+    <div id="modules-3"></div>
+
+
+    <script src="separator.js"></script>
+    <script src="car.js"></script>
+    <script src="carHandler.js"></script>
+    <script src="objCreation.js"></script>
+    <script src="constructor.js"></script>
+    <script src="constructorWithPrototypes.js"></script>
+    <script src="modules.js"></script>
+    <script>
+
+        makeConsoleLogSeparator();
+        let c = document.getElementById("carobject")
+        c.textContent = myCar.getInfo();
+
+        makeConsoleLogSeparator();
+        let objCreation = document.getElementById("obj-creation");
+        objCreation.textContent = value2CreatedForNewObj2;
+        document.getElementById("obj-creation-2-driver").textContent = "extended person: driver with his top speed: " + driver.topSpeed;
+
+        makeConsoleLogSeparator();
+        document.getElementById("constructor").textContent = civic.toString();
+        document.getElementById("constructor-with-prototype").textContent = mondeo.toString2();
+        makeConsoleLogSeparator();
+
+        document.getElementById("modules").textContent = myModule.saySomething();
+        myNamespace.myPublicFunction("arg through");
+        myNamespace.myPublicFunction("another arg through");
+        document.getElementById("modules-3").textContent = "myNamespace.getVar = " + myNamespace.getVar();
+        makeConsoleLogSeparator();
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,3 @@
+function makeConsoleLogSeparator() {
+    console.log("-----------------------------------");
+}
